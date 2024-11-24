@@ -51,7 +51,7 @@
       text-align: center;
       background: linear-gradient(to bottom, #4CAF50, #2196F3);
       color: white;
-      padding: 35px 20px; /* Reduced height */
+      padding: 50px 20px;
     }
 
     #hero h1 {
@@ -115,14 +115,32 @@
       margin-bottom: 10px;
     }
 
-    #features ul {
-      list-style: none;
+    #features .feature-cards {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
       margin-top: 20px;
     }
 
-    #features ul li {
-      margin: 10px 0;
-      color: #555;
+    #features .feature-card {
+      background: white;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      text-align: left;
+      width: 300px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    #features .feature-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    }
+
+    #features .feature-card h3 {
+      color: #4CAF50;
+      margin-bottom: 10px;
     }
 
     footer {
@@ -136,15 +154,26 @@
       margin: 10px 0;
     }
 
+    footer .social-links {
+      margin: 10px 0;
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+    }
+
     footer .social-links a {
-      color: #4CAF50;
       text-decoration: none;
-      margin: 0 5px;
       font-weight: bold;
+      padding: 8px 15px;
+      border-radius: 5px;
+      border: 1px solid #4CAF50;
+      color: #4CAF50;
+      transition: background-color 0.3s, color 0.3s;
     }
 
     footer .social-links a:hover {
-      text-decoration: underline;
+      background-color: #4CAF50;
+      color: white;
     }
   </style>
 </head>
@@ -191,20 +220,30 @@
 
   <section id="features">
     <h2>Features</h2>
-    <ul>
-      <li><strong>Personalized Learning:</strong> Tailored explanations for learners of all levels.</li>
-      <li><strong>AI-Driven Insights:</strong> Leveraging advanced technology to deliver clear insights.</li>
-      <li><strong>Interactive Experience:</strong> Engage with simplified and intuitive tools.</li>
-    </ul>
+    <div class="feature-cards">
+      <div class="feature-card">
+        <h3>Personalized Learning</h3>
+        <p>Tailored explanations for learners of all levels, ensuring you never feel left out.</p>
+      </div>
+      <div class="feature-card">
+        <h3>AI-Driven Insights</h3>
+        <p>Powered by cutting-edge AI technology to deliver accurate and clear explanations.</p>
+      </div>
+      <div class="feature-card">
+        <h3>Interactive Design</h3>
+        <p>An intuitive and engaging interface that makes learning fun and simple.</p>
+      </div>
+    </div>
   </section>
 
   <footer id="contact">
+    <p>Follow us:</p>
+    <div class="social-links">
+      <a href="#" class="linkedin">LinkedIn</a>
+      <a href="#" class="twitter">Twitter</a>
+      <a href="#" class="github">GitHub</a>
+    </div>
     <p>&copy; 2024 ELI-Fi Team</p>
-    <p>Follow us: 
-      <a href="#">LinkedIn</a> | 
-      <a href="#">Twitter</a> | 
-      <a href="#">GitHub</a>
-    </p>
   </footer>
 </body>
 </html>
