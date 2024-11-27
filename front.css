@@ -1,0 +1,292 @@
+/* Enable smooth scrolling on the entire page */
+html {
+    scroll-behavior: smooth;
+}
+
+
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #1b1b1b; /* Dark charcoal */
+    color: #eaeaea; /* Light gray for text */
+    line-height: 1.6;
+}
+
+/* Header and Navigation */
+header {
+    background-color: #333333; /* Slightly lighter charcoal */
+    padding: 0.4rem 1rem;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    box-sizing: border-box; /* Include padding/border in the width */
+}
+
+header nav .content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .nav-logo {
+    color: #ffd700; /* Soft yellow */
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 20px;
+    margin-left: 1rem;
+    transition: color 0.3s ease;
+}
+
+header .nav-link:hover {
+    color: #ffeb84; /* Faded yellow */
+}
+
+header .dropdown {
+    position: relative;
+    margin-left: 75%;
+}
+
+header .dropdown .dropbtn {
+    background: none;
+    color: #ffd700;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    margin-right: 10px;
+    font-size: 1rem;
+}
+
+header .dropdown-content {
+    display: flex; /* Align items horizontally */
+    flex-wrap: wrap; /* Allow items to wrap if necessary */
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: auto;
+    background-color: #444444; /* Dark background */
+    border: 2px solid #ffd700; /* Soft yellow border around the box */
+    padding: 0.5rem; /* Padding inside the dropdown box */
+    width: 400px; /* Fixed width for the dropdown */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3); /* Shadow for the box */
+    border-radius: 8px; /* Rounded corners for the box */
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0s 0.3s;
+}
+
+header .dropdown:hover .dropdown-content {
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 0.3s ease;
+}
+
+header .dropdown-content a {
+    color: #ffd700; /* Soft yellow text */
+    text-decoration: none;
+    padding: 0.8rem 1.5rem; /* Padding inside each item */
+    font-size: 1rem; /* Font size for the items */
+    font-weight: bold;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+header .dropdown-content a:hover {
+    background-color: #555555; /* Darker background on hover */
+    color: #fff; /* White text on hover */
+}
+
+/* Login/Sign Up Button */
+header .login-btn {
+    background-color: #ffd700; /* Matching the theme with soft yellow */
+    color: #222222; /* Dark text for contrast */
+    border: none;
+    font-weight: bold;
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 10px; /* Add some spacing to the right */
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+header .login-btn:hover {
+    background-color: #ffeb84; /* Slightly lighter yellow on hover */
+    color: #000; /* Darker text for hover */
+}
+
+/* Adjust Dropdown and Login Button Placement */
+header .content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Hero Section */
+#hero {
+    text-align: center;
+    padding: 2.5rem 1rem;
+    background-color: #222222; /* Very dark charcoal */
+    color: #eaeaea;
+}
+
+#hero h1 {
+    font-size: 2.5rem;
+    color: #ffd700;
+    margin-bottom: 1rem;
+}
+
+#hero p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    color: #dcdcdc; /* Softer gray */
+}
+
+.hero-buttons .btn {
+    display: inline-block;
+    padding: 0.8rem 1.5rem;
+    border-radius: 5px;
+    font-size: 1rem;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    margin: 0 0.5rem;
+}
+
+.hero-buttons .primary-btn {
+    background-color: #ffd700;
+    color: #222222;
+}
+
+.hero-buttons .primary-btn:hover {
+    background-color: #ffeb84;
+}
+
+.hero-buttons .secondary-btn {
+    background-color: #1b1b1b;
+    color: #ffd700;
+    border: 2px solid #ffd700;
+}
+
+.hero-buttons .secondary-btn:hover {
+    background-color: #333333;
+}
+
+/* Features Section */
+#features {
+    padding: 2rem 1rem;
+    background-color: #1b1b1b;
+}
+
+#features h2 {
+    text-align: center;
+    color: #ffd700;
+    margin-bottom: 2rem;
+}
+
+.features-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.feature-item {
+    text-align: center;
+    padding: 1rem;
+    background-color: #222222;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 300px;
+}
+
+.feature-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.4);
+}
+
+.feature-item i {
+    font-size: 2rem;
+    color: #ffd700;
+    margin-bottom: 0.5rem;
+}
+
+.feature-item h3 {
+    color: #ffeb84;
+    margin-bottom: 0.5rem;
+}
+
+.feature-item p {
+    color: #dcdcdc;
+    font-size: 0.95rem;
+}
+
+/* Roadmaps Section */
+#roadmaps {
+    padding: 1.5rem 1rem;
+    background-color: #333333;
+}
+
+#roadmaps h2 {
+    text-align: center;
+    color: #ffd700;
+    margin-bottom: 2rem;
+}
+
+.roadmaps-preview {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.roadmap-card {
+    background-color: #222222;
+    border-radius: 8px;
+    padding: 1.5rem;
+    width: 280px;
+    text-align: center;
+    color: #eaeaea;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.roadmap-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.4);
+}
+
+.roadmap-card h3 {
+    color: #ffd700;
+    margin-bottom: 0.5rem;
+}
+
+.roadmap-card p {
+    font-size: 0.9rem;
+    color: #dcdcdc;
+    margin-bottom: 1rem;
+}
+
+.roadmap-card a {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    background-color: #ffd700;
+    color: #222222;
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+
+.roadmap-card a:hover {
+    background-color: #ffeb84;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #222222;
+    color: #ffd700;
+    font-size: 0.9rem;
+}

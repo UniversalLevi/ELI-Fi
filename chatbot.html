@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Career Chatbot</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        /* Global Styles */
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #111; /* Dark background for contrast */
+            margin: 0;
+            padding: 0;
+            color: #fff; /* White text */
+        }
+
+        /* Navigation Bar */
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background-color: #222; /* Dark background */
+            color: #ffd700; /* Yellow text for navbar */
+            box-shadow: 0 4px 12px rgba(255, 215, 0, 0.3); /* Subtle yellow glow */
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .navbar .brand {
+            font-size: 28px;
+            font-weight: bold;
+            letter-spacing: 1px;
+        }
+
+        .navbar ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        .navbar ul li {
+            margin-left: 25px;
+        }
+
+        .navbar ul li a {
+            text-decoration: none;
+            color: #ffd700; /* Yellow text */
+            font-size: 18px;
+            transition: color 0.3s ease;
+        }
+
+        .navbar ul li a:hover {
+            color: #fff; /* White on hover */
+        }
+
+        /* Chat Container */
+        .chat-container {
+            width: 100%;
+            max-width: 1000px;
+            height: 600px;
+            background-color: #222; /* Dark gray background */
+            box-shadow: 0 8px 20px rgba(255, 215, 0, 0.3); /* Subtle yellow glow */
+            border-radius: 12px;
+            display: flex;
+            flex-direction: column;
+            margin: 40px auto;
+            overflow: hidden;
+        }
+
+        /* Chat Window */
+        .chat-window {
+            flex-grow: 1;
+            padding: 20px;
+            overflow-y: auto;
+            border-bottom: 1px solid #ffd700; /* Yellow border */
+            background-color: #333; /* Darker gray */
+        }
+
+        .chat-message {
+            margin: 10px 0;
+            padding: 15px 20px;
+            border-radius: 25px;
+            max-width: 75%;
+            word-wrap: break-word;
+            background-color: #444; /* Dark gray bubble */
+            color: #fff; /* White text */
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        .chat-message-user {
+            align-self: flex-end;
+            background-color: #ffd700; /* Yellow bubble */
+            color: #000; /* Black text */
+            text-align: right;
+        }
+
+        .chat-message-bot {
+            align-self: flex-start;
+            background-color: #333; /* Dark gray bubble */
+            color: #ffd700; /* Yellow text */
+        }
+
+        /* Input Area */
+        .input-area {
+            display: flex;
+            padding: 15px;
+            background-color: #222; /* Dark background */
+            border-top: 1px solid #ffd700; /* Yellow border */
+        }
+
+        .input-area input {
+            flex-grow: 1;
+            padding: 15px;
+            border: 1px solid #ffd700; /* Yellow border */
+            border-radius: 30px;
+            outline: none;
+            font-size: 16px;
+            background-color: #333; /* Dark gray input */
+            color: #fff; /* White text */
+        }
+
+        .input-area button {
+            padding: 15px 25px;
+            background-color: #ffd700; /* Yellow button */
+            color: #000; /* Black text */
+            border: none;
+            border-radius: 30px;
+            cursor: pointer;
+            margin-left: 10px;
+            font-size: 16px;
+            transition: background-color 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .input-area button:hover {
+            background-color: #fff; /* White on hover */
+            color: #000; /* Black text */
+        }
+
+        /* Footer */
+        .footer {
+            padding: 20px 0;
+            background-color: #222; /* Dark background */
+            color: #ffd700; /* Yellow text */
+            text-align: center;
+            width: 100%;
+        }
+
+        /* Scrollbars */
+        .chat-window::-webkit-scrollbar {
+            width: 6px;
+        }
+
+        .chat-window::-webkit-scrollbar-thumb {
+            background-color: #ffd700; /* Yellow scrollbar */
+            border-radius: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<nav class="navbar">
+    <div class="brand">PathFinder</div>
+    <ul>
+        <li><a href="index.html">Home</a></li>  
+        <li><a href="progress.html">Progress</a></li>
+        <li><a href="#">Profile</a></li>
+    </ul>
+</nav>
+
+<!-- Chat Section -->
+<div class="container fadeIn">
+    <div class="chat-container">
+        <div class="chat-window" id="chat-window">
+            <!-- Messages will appear here -->
+        </div>
+        <div class="input-area">
+            <input type="text" id="user-input" placeholder="Type your message...">
+            <button id="send-button">Send</button>
+        </div>
+    </div>
+</div>
+
+<!-- Footer -->
+<footer class="footer">
+    &copy; 2024 AI Career - All Rights Reserved
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
