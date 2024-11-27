@@ -3,39 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PathFinder - Career Roadmaps</title>
+    <title>ELI-Fi</title>
     <link rel="stylesheet" href="front.css">
-    <link rel="stylesheet" href="script.js">
     <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
 </head>
 <body>
     <!-- Header and Navigation -->
     <header>
-    <nav>
-        <div class="content">
-            <p class="nav-logo">PathFinder</p>
-            <div class="dropdown">
-                <button class="nav-link dropbtn">Sections ▼</button>
-                <div class="dropdown-content">
-                    <a href="#home">Home</a>
-                    <a href="#roadmaps">Roadmaps</a>
-                    <a href="chatbot.html">Chatbot</a>
-                    <a href="#resources">resources</a>
+        <nav>
+            <div class="content">
+                <p class="nav-logo">ELI-Fi</p>
+                <div class="dropdown">
+                    <button class="nav-link dropbtn">Sections ▼</button>
+                    <div class="dropdown-content">
+                        <a href="#home">Home</a>
+                        <a href="chatbot.html">Chatbot</a>
+                        <a href="#features">Features</a>
+                        <a href="#resources">Resources</a>
+                    </div>
                 </div>
+                <a href="login.html" target="_blank">
+                    <button class="nav-link login-btn">Login/Sign Up</button>
+                </a>
             </div>
-            <a href="login.html" target="_blank"><button class="nav-link login-btn">Login/Sign Up</button></a>
-        </div>
-    </nav>
-</header>
-
+        </nav>
+    </header>
 
     <!-- Hero Section -->
-    <section id="hero">
-        <h1>Welcome to PathFinder</h1>
-        <p>Your ultimate guide to career planning and growth. Explore dynamic roadmaps and chat with our AI for personalized career advice.</p>
-        <div class="hero-buttons">
-            <a href="#roadmaps" class="btn primary-btn">Explore Roadmaps</a>
-            <a href="chatbot.html" target="_blank" class="btn secondary-btn">Chat with Our AI</a>
+    <section id="hero" class="hero-section">
+        <div class="hero-content">
+            <h1>Welcome to ELI-Fi</h1>
+            <p>Revolutionizing learning with AI-powered, simplified explanations for everyone.</p>
+            <div class="hero-buttons">
+                <a href="#features" class="btn primary-btn">Explore Resources</a>
+                <a href="chatbot.html" target="_blank" class="btn secondary-btn">Chat with Our AI</a>
+            </div>
         </div>
     </section>
 
@@ -44,53 +46,49 @@
         <h2>What We Offer</h2>
         <div class="features-grid">
             <div class="feature-item">
-                <i class="bx bx-map"></i>
-                <h3>Dynamic Roadmaps</h3>
-                <p>Customized career roadmaps tailored to your skills, interests, and goals.</p>
-            </div>
-            <div class="feature-item">
                 <i class="bx bx-chat"></i>
                 <h3>AI Chatbot</h3>
-                <p>Ask questions, get personalized advice, and explore career options with our AI assistant.</p>
+                <p>Ask questions, get personalized advice, and explore ideas with our AI assistant.</p>
             </div>
             <div class="feature-item">
-                <i class="bx bx-book"></i>
-                <h3>Career Guides</h3>
-                <p>Comprehensive resources to help you navigate your career journey.</p>
+                <i class="bx bx-brain"></i>
+                <h3>Tailored Explanations</h3>
+                <p>Learn complex topics simplified to your understanding level with dynamic AI-driven insights.</p>
+            </div>
+            <div class="feature-item">
+                <i class="bx bx-group"></i>
+                <h3>Interactive Learning</h3>
+                <p>Engage with intuitive tools designed to make learning fun and effective for all ages.</p>
             </div>
         </div>
     </section>
 
-    <!-- Roadmaps Preview Section -->
-    <section id="roadmaps">
-        <h2>Explore Our Roadmaps</h2>
-        <div class="roadmaps-preview">
-            <!-- Example roadmap cards -->
-            <div class="roadmap-card">
-                <h3>Software Development</h3>
-                <p>Learn how to become a successful software developer with this step-by-step guide.</p>
-                <a href="#software-development" class="btn">View Details</a>
+    <!-- Resources Section -->
+    <section id="resources">
+        <h2>Resources</h2>
+        <p>Explore our curated collection of educational tools, articles, and materials to aid your learning journey.</p>
+        <div class="resources-grid">
+            <div class="resource-item">
+                <h3>Quick Start Guides</h3>
+                <p>Get up to speed on various topics with our beginner-friendly guides.</p>
+                <a href="#guides" class="btn">View Guides</a>
             </div>
-            <div class="roadmap-card">
-                <h3>Data Science</h3>
-                <p>Follow this roadmap to build a career in the exciting field of data science.</p>
-                <a href="#data-science" class="btn">View Details</a>
+            <div class="resource-item">
+                <h3>Expert Articles</h3>
+                <p>Read in-depth articles written by experts to deepen your understanding.</p>
+                <a href="#articles" class="btn">Explore Articles</a>
             </div>
-            <div class="roadmap-card">
-                <h3>Graphic Design</h3>
-                <p>Discover the skills and tools needed to excel in graphic design.</p>
-                <a href="#graphic-design" class="btn">View Details</a>
+            <div class="resource-item">
+                <h3>Video Tutorials</h3>
+                <p>Learn visually with our library of step-by-step video tutorials.</p>
+                <a href="#videos" class="btn">Watch Videos</a>
             </div>
         </div>
-        <a href="#all-roadmaps" class="btn primary-btn">See All Roadmaps</a>
     </section>
 
     <!-- Footer -->
     <footer>
-        <p>&copy; 2024 PathFinder. All rights reserved.</p>
+        <p>&copy; 2024 ELI-Fi. All rights reserved.</p>
     </footer>
-
-    <!-- Include Scripts -->
-    <script src="script.js"></script>
 </body>
 </html>
